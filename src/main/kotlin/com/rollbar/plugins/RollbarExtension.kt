@@ -6,7 +6,8 @@ import org.gradle.kotlin.dsl.setProperty
 
 open class RollbarExtension internal constructor(objects: ObjectFactory) {
     /**
-     * The API token connected to your project. This will be used to upload the mapping.txt file to your project accordingly.
+     * The server API token connected to your project. This will be used to upload the mapping.txt
+     * file to your project accordingly.
      * If not provided, the plugin will skip any upload.
      */
     val apiToken = objects.property<String>().convention(null)
