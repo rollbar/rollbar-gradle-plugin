@@ -1,4 +1,4 @@
-rootProject.name = "rollbar-android"
+rootProject.name = "rollbar-gradle-plugin"
 
 pluginManagement {
     repositories {
