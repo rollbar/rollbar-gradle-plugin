@@ -10,7 +10,12 @@ version = properties["PLUGIN_VERSION"].toString()
 dependencies {
     compileOnly(gradleApi())
     compileOnly(libs.android.gradle.plugin)
-    compileOnlyApi(libs.okhttp)
+    testImplementation(kotlin("test"))
+    testImplementation("org.mockito:mockito-core:5.12.0")
+    testImplementation("org.mockito.kotlin:mockito-kotlin:5.2.1")
+    testImplementation("com.squareup.okio:okio:3.6.0")
+    testImplementation("io.mockk:mockk:1.13.10")
+    testImplementation("com.google.truth:truth:1.4.2")
 }
 
 gradlePlugin {
@@ -26,4 +31,15 @@ gradlePlugin {
             implementationClass = properties["PLUGIN_NAME_CLASS"].toString()
         }
     }
+
+}
+
+sourceSets {
+    named("test") {
+        kotlin.srcDirs("src/test/kotlin")
+    }
+}
+
+tasks.test {
+    useJUnitPlatform()
 }
