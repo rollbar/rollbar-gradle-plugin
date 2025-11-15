@@ -1,10 +1,11 @@
 name: rollbar-gradle-plugin CI
 
 on:
-  pull_request:
   push:
     branches:
-      - "**"
+      - "main"
+      - "release/**"
+  pull_request:
   release:
     types: [published]
 
