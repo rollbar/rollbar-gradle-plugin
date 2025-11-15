@@ -37,7 +37,7 @@ jobs:
 
   publish:
     name: Publish to Gradle Plugin Portal
-    #if: github.event_name == 'release'
+    if: github.event_name == 'release'
     runs-on: ubuntu-latest
     needs: [ test ]
 
