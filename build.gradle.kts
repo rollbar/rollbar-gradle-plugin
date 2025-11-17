@@ -26,7 +26,7 @@ gradlePlugin {
         create("rollbar-android") {
             id = properties["PLUGIN_NAME"].toString()
             displayName = "Rollbar gradle plugin"
-            description = "This Plugin uploads your mapping files to Rollbar"
+            description = "Gradle plugin for uploading Android ProGuard/R8 mapping files to Rollbar for deobfuscation."
             tags = listOf("upload", "mappings", "android", "Rollbar")
             implementationClass = properties["PLUGIN_NAME_CLASS"].toString()
         }

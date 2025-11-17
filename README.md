@@ -1,5 +1,7 @@
 # rollbar-android
 
+Gradle plugin for uploading Android ProGuard/R8 mapping files to Rollbar for deobfuscation.
+
 ## Usage
 
 ```groovy
