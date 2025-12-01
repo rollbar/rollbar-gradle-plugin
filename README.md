@@ -31,4 +31,4 @@ Publish the latest changes from the `rollbar-android` plugin to mavenLocal:
 ./gradlew publishToMavenLocal
 ```
 
-Credit to (https://github.com/anthonymonori)[https://github.com/anthonymonori] for getting this off the ground. 
+Credit to [https://github.com/anthonymonori](https://github.com/anthonymonori) for getting this off the ground. 
